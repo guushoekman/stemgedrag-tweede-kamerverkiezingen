@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+body {
+	font-family: 'Ubuntu', sans-serif;
+}
+
+.nv-axis.nv-x .tick line {
+    display:none;
+}
+
+.nvd3 text {
+	font-family: 'Ubuntu', sans-serif;
+}
+
+.nv-axislabel {
+	font-style: italic !important;
+}
+
+#chart {
+	height: 75vh;
+}
+
+.chart-wrapper {
+	padding: 10px;
+	margin-left: 50px;
+	margin-right: 25px;
+}
+
+@media(max-width:992px) {
+	.chart-wrapper {
+		padding: 10px;
+		margin-left: 15px;
+		margin-right: 15px;
+	}
+}
+
+@media(max-width:768px) {
+	.chart-wrapper {
+		padding: 10px;
+		margin-left: 5px;
+		margin-right: 5px;
+	}
+}
+
+#chart-title {
+	margin-bottom: 0px;
+	margin-top: 15px;
+}
+
+rect {
+	fill-opacity: 1;
+}
+
+.nvtooltip {
+	background: rgba(255,255,255,.75);
+	border: 0px solid #ccc;
+	border-radius: 0px;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+.nvtooltip table td.legend-color-guide div {
+	border: none;
+}
+
+#header {
+	width: 100%;
+	background-color: #efefef;
+	border-bottom: 3px solid #ccc;
+}
+
+.hide-scrollbar {
+	overflow: hidden;
+	height: 100%;
+}
+
+.no-margin-bottom {
+	margin-bottom: 0;
+}
+
+#help-button {
+	cursor: help;
+}
+
+.help {
+	font-size: .8rem;
+	color: #fff;
+	pointer-events: none;
+	opacity: 0;
+}
+
+.scroll-down {
+	position:absolute;
+	bottom: 15%;
+	left: 50%;
+	transform: translate(-50%, 0);
+}
+
+.help div {
+	background-color: #373a3c;
+	padding: 1px 4px;
+	border-radius: 3px;
+}
+
+.help-page img {
+	max-width: 100%;
+	margin-bottom: 5px;
+}
