@@ -3,7 +3,7 @@ function geslacht() {
 	var chart = nv.models.multiBarChart()
 		chart.stacked(true)
 		chart.reduceXTicks(false)
-		chart.yAxis.axisLabel('y axis')
+		chart.yAxis.axisLabel('Percentage van stemmen')
 		chart.yAxis.axisLabelDistance(-10);
     chart.xAxis.axisLabel('x axis');
 	;

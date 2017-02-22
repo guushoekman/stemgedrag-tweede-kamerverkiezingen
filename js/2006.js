@@ -3,9 +3,8 @@ function geslacht2006() {
 	var chart = nv.models.multiBarChart()
 		chart.stacked(true)
 		chart.reduceXTicks(false)
-		chart.yAxis.axisLabel('y axis')
+		chart.yAxis.axisLabel('Percentage van stemmen')
 		chart.yAxis.axisLabelDistance(-10);
-    chart.xAxis.axisLabel('x axis');
     chart.yDomain([0,100]);
     chart.yAxis.tickValues([10,20,30,40,50,60,70,80,90]);
     chart.yAxis.tickFormat(d3.format("d"));
@@ -115,9 +114,8 @@ function herkomst2006() {
   var chart = nv.models.multiBarChart()
     chart.stacked(true)
     chart.reduceXTicks(false)
-    chart.yAxis.axisLabel('y axis')
+    chart.yAxis.axisLabel('Percentage van stemmen')
     chart.yAxis.axisLabelDistance(-10);
-    chart.xAxis.axisLabel('x axis');
     chart.yDomain([0,100]);
     chart.yAxis.tickValues([10,20,30,40,50,60,70,80,90]);
     chart.yAxis.tickFormat(d3.format("d"));
@@ -235,9 +233,8 @@ function onderwijs2006() {
   var chart = nv.models.multiBarChart()
     chart.stacked(true)
     chart.reduceXTicks(false)
-    chart.yAxis.axisLabel('y axis')
+    chart.yAxis.axisLabel('Percentage van stemmen')
     chart.yAxis.axisLabelDistance(-10);
-    chart.xAxis.axisLabel('x axis');
     chart.yDomain([0,100]);
     chart.yAxis.tickValues([10,20,30,40,50,60,70,80,90]);
     chart.yAxis.tickFormat(d3.format("d"));  ;
@@ -373,9 +370,8 @@ function leeftijd2006() {
   var chart = nv.models.multiBarChart()
     chart.stacked(true)
     chart.reduceXTicks(false)
-    chart.yAxis.axisLabel('y axis')
+    chart.yAxis.axisLabel('Percentage van stemmen')
     chart.yAxis.axisLabelDistance(-10);
-    chart.xAxis.axisLabel('x axis');
     chart.yDomain([0,100]);
     chart.yAxis.tickValues([10,20,30,40,50,60,70,80,90]);
     chart.yAxis.tickFormat(d3.format("d"));  ;
@@ -529,9 +525,8 @@ function burgerlijkeStaat2006() {
   var chart = nv.models.multiBarChart()
     chart.stacked(true)
     chart.reduceXTicks(false)
-    chart.yAxis.axisLabel('y axis')
+    chart.yAxis.axisLabel('Percentage van stemmen')
     chart.yAxis.axisLabelDistance(-10);
-    chart.xAxis.axisLabel('x axis');
     chart.yDomain([0,100]);
     chart.yAxis.tickValues([10,20,30,40,50,60,70,80,90]);
     chart.yAxis.tickFormat(d3.format("d"));  ;
@@ -658,9 +653,8 @@ function stedelijkheid2006() {
   var chart = nv.models.multiBarChart()
     chart.stacked(true)
     chart.reduceXTicks(false)
-    chart.yAxis.axisLabel('y axis')
+    chart.yAxis.axisLabel('Percentage van stemmen')
     chart.yAxis.axisLabelDistance(-10);
-    chart.xAxis.axisLabel('x axis');
     chart.yDomain([0,100]);
     chart.yAxis.tickValues([10,20,30,40,50,60,70,80,90]);
     chart.yAxis.tickFormat(d3.format("d"));  ;
@@ -796,9 +790,8 @@ function kerkelijkeGezindte2006() {
   var chart = nv.models.multiBarChart()
     chart.stacked(true)
     chart.reduceXTicks(false)
-    chart.yAxis.axisLabel('y axis')
+    chart.yAxis.axisLabel('Percentage van stemmen')
     chart.yAxis.axisLabelDistance(-10);
-    chart.xAxis.axisLabel('x axis');
     chart.yDomain([0,100]);
     chart.yAxis.tickValues([10,20,30,40,50,60,70,80,90]);
     chart.yAxis.tickFormat(d3.format("d"));  ;
@@ -943,9 +936,8 @@ function kerkbezoek2006() {
   var chart = nv.models.multiBarChart()
     chart.stacked(true)
     chart.reduceXTicks(false)
-    chart.yAxis.axisLabel('y axis')
+    chart.yAxis.axisLabel('Percentage van stemmen')
     chart.yAxis.axisLabelDistance(-10);
-    chart.xAxis.axisLabel('x axis');
     chart.yDomain([0,100]);
     chart.yAxis.tickValues([10,20,30,40,50,60,70,80,90]);
     chart.yAxis.tickFormat(d3.format("d"));  ;
@@ -1073,5 +1065,7 @@ function kerkbezoek2006() {
   ]).transition().duration(500).call(chart);
 
   $('#chart-title').html('<h4>Stemgedrag naar kerkbezoek <div class="btn-group" role="group"><button onclick="kerkbezoek2006()" type="button" class="btn btn-sm btn-secondary active">2006</button><button onclick="kerkbezoek2010()" type="button" class="btn btn-sm btn-secondary">2010</button><button onclick="kerkbezoek2012()" type="button" class="btn btn-sm btn-secondary">2012</button></div></h4>');
+
+  $('#chart-definitions').html('<dl class="row"><p class="col-xs-12">Het percentage personen van 18 jaar of ouder dat zichzelf tot een kerkelijk gezindte rekent en dat een keer per week of vaker een bijeenkomst bezoekt met een godsdienstig of levensbeschouwelijk doel.</p>');
 
 }
