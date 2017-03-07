@@ -24,7 +24,7 @@
 				<button type="button" class="btn btn-sm btn-secondary active" onclick="leeftijd2012()"><i class="fa fa-child" aria-hidden="true"></i> Leeftijd</button>
 			  <button type="button" class="btn btn-sm btn-secondary" onclick="geslacht2012()"><i class="fa fa-venus-mars" aria-hidden="true"></i> Geslacht</button>
 			  <button type="button" class="btn btn-sm btn-secondary" onclick="herkomst2012()"><i class="fa fa-flag" aria-hidden="true"></i> Herkomst</button>
-			  <button type="button" class="btn btn-sm btn-secondary" onclick="onderwijs2012()"><i class="fa fa-graduation-cap" aria-hidden="true"></i> Onderwijs</button>
+			  <button type="button" class="btn btn-sm btn-secondary" onclick="onderwijs2012()"><i class="fa fa-graduation-cap" aria-hidden="true"></i> Onderwijsniveau</button>
 			  <button type="button" class="btn btn-sm btn-secondary" onclick="burgerlijkeStaat2012()"><i class="fa fa-handshake-o" aria-hidden="true"></i> Burgerlijke staat</button>
 			  <button type="button" class="btn btn-sm btn-secondary" onclick="stedelijkheid2012()"><i class="fa fa-home" aria-hidden="true"></i> Stedelijkheid</button>
 			  <button type="button" class="btn btn-sm btn-secondary" onclick="kerkelijkeGezindte2012()"><i class="fa fa-cloud" aria-hidden="true"></i> Kerkelijke gezindte</button>
@@ -32,17 +32,18 @@
 			</div>
 		  <div id="chart-title"></div>
 		  <div class="help">
-			  <div class="pull-left"><i class="fa fa-arrow-down" aria-hidden="true"></i> Herschik de diagram</div>
-			  <div class="pull-right"><i class="fa fa-arrow-down" aria-hidden="true"></i> Klik op een partij om deze weg te halen; dubbelklik om de anderen weg te halen</div>
+			  <div class="pull-left"><i class="fa fa-arrow-down" aria-hidden="true"></i> Gestapelde of gescheiden staven</div>
+			  <div class="pull-right"><i class="fa fa-arrow-down" aria-hidden="true"></i> Klik hier om partijen weg te halen / toe te voegen. Dubbelklik om er één te selecteren</div>
 		  </div>
 		</div>
 		<div id="chart">
 			<svg></svg>
 		</div>
 		<div class="chart-wrapper">
-			<h3>Definities</h3>
-			<div id="chart-definitions">
-			</div>
+			<h3>Begrippen en opmerkingen</h3>
+			<div id="chart-definitions"></div>
+			<p>Omdat de percentages zijn afgerond is het totale aantal stemmen in sommige gevallen niet precies 100%.</p>
+			<p>Bron: Centraal Bureau voor de Statistiek (<a href="http://statline.cbs.nl/Statweb/selection/?DM=SLNL&PA=71725NED&VW=T">2006</a>, <a href="http://statline.cbs.nl/Statweb/selection/?DM=SLNL&PA=81107NED&VW=T">2010</a>, <a href="http://statline.cbs.nl/Statweb/selection/?DM=SLNL&PA=82095NED&VW=T">2012</a>)</p>
 		</div>
 	</div>
 </body>
@@ -78,7 +79,7 @@
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-90365352-6', 'auto');
+  ga('create', 'UA-90365352-1', 'auto');
   ga('send', 'pageview');
 
 </script>

@@ -3,7 +3,7 @@ function geslacht2010() {
 	var chart = nv.models.multiBarChart()
 		chart.stacked(true)
 		chart.reduceXTicks(false)
-		chart.yAxis.axisLabel('Percentage van stemmen')
+		chart.yAxis.axisLabel('Percentage stemmen van stemgerechtigden')
 		chart.yAxis.axisLabelDistance(-10);
     chart.yDomain([0,100]);
     chart.yAxis.tickValues([10,20,30,40,50,60,70,80,90]);
@@ -117,6 +117,7 @@ function geslacht2010() {
 
   $('#chart-title').html('<h4>Stemgedrag naar geslacht <div class="btn-group" role="group"><button onclick="geslacht2006()" type="button" class="btn btn-sm btn-secondary">2006</button><button onclick="geslacht2010()" type="button" class="btn btn-sm btn-secondary active">2010</button><button onclick="geslacht2012()" type="button" class="btn btn-sm btn-secondary">2012</button></div></h4>');
 
+  $('#chart-definitions').html('')
 }
 
 function herkomst2010() {
@@ -124,7 +125,7 @@ function herkomst2010() {
   var chart = nv.models.multiBarChart()
     chart.stacked(true)
     chart.reduceXTicks(false)
-    chart.yAxis.axisLabel('Percentage van stemmen')
+    chart.yAxis.axisLabel('Percentage stemmen van stemgerechtigden')
     chart.yAxis.axisLabelDistance(-10);
     chart.yDomain([0,100]);
     chart.yAxis.tickValues([10,20,30,40,50,60,70,80,90]);
@@ -247,6 +248,7 @@ function herkomst2010() {
 
   $('#chart-title').html('<h4>Stemgedrag naar herkomst <div class="btn-group" role="group"><button onclick="herkomst2006()" type="button" class="btn btn-sm btn-secondary">2006</button><button onclick="herkomst2010()" type="button" class="btn btn-sm btn-secondary active">2010</button><button onclick="herkomst2012()" type="button" class="btn btn-sm btn-secondary">2012</button></div></h4>');
 
+  $('#chart-definitions').html('<dl class="row"><dt class="col-sm-3">Autochtoon</dt><dd class="col-sm-9">Personen van wie beide ouders in Nederland geboren zijn</dd><dt class="col-sm-3">Westerse allochtoon</dt><dd class="col-sm-9">Allochtonen van wie het land van herkomst is gelegen in Europa (m.u.v. Turkije), Noord-Amerika, Indonesië, Japan of Oceanië (onder meer Australië, Nieuw-Zeeland).</dd><dt class="col-sm-3">Niet-westerse allochtoon</dt><dd class="col-sm-9">Allochtonen van wie het land van herkomst is gelegen in Afrika, Azië (m.u.v. Japan en Indonesië), Latijns-Amerika of Turkije. Van een in het buitenland geboren allochtoon wordt zijn of haar geboorteland beschouwd</dd></dl><p>Om de CBS definitie van het woord allochtoon goed te begrijpen raad ik aan om de <a href="https://nl.wikipedia.org/wiki/Allochtoon_(persoon)#CBS-definitie">Wikipedia pagina</a> te lezen.</p>')
 }
 
 function onderwijs2010() {
@@ -254,7 +256,7 @@ function onderwijs2010() {
   var chart = nv.models.multiBarChart()
     chart.stacked(true)
     chart.reduceXTicks(false)
-    chart.yAxis.axisLabel('Percentage van stemmen')
+    chart.yAxis.axisLabel('Percentage stemmen van stemgerechtigden')
     chart.yAxis.axisLabelDistance(-10);
     chart.yDomain([0,100]);
     chart.yAxis.tickValues([10,20,30,40,50,60,70,80,90]);
@@ -395,8 +397,9 @@ function onderwijs2010() {
   
   ]).transition().duration(500).call(chart);
 
-  $('#chart-title').html('<h4>Stemgedrag naar onderwijsniveau <div class="btn-group" role="group"><button onclick="onderwijs2006()" type="button" class="btn btn-sm btn-secondary">2006</button><button onclick="onderwijs2010()" type="button" class="btn btn-sm btn-secondary active">2010</button><button onclick="onderwijs2012()" type="button" class="btn btn-sm btn-secondary">2012</button></div></h4>');
+  $('#chart-title').html('<h4>Stemgedrag naar hoogst behaalde opleiding <div class="btn-group" role="group"><button onclick="onderwijs2006()" type="button" class="btn btn-sm btn-secondary">2006</button><button onclick="onderwijs2010()" type="button" class="btn btn-sm btn-secondary active">2010</button><button onclick="onderwijs2012()" type="button" class="btn btn-sm btn-secondary">2012</button></div></h4>');
 
+  $('#chart-definitions').html('')
 }
 
 function leeftijd2010() {
@@ -404,7 +407,7 @@ function leeftijd2010() {
   var chart = nv.models.multiBarChart()
     chart.stacked(true)
     chart.reduceXTicks(false)
-    chart.yAxis.axisLabel('Percentage van stemmen')
+    chart.yAxis.axisLabel('Percentage stemmen van stemgerechtigden')
     chart.yAxis.axisLabelDistance(-10);
     chart.yDomain([0,100]);
     chart.yAxis.tickValues([10,20,30,40,50,60,70,80,90]);
@@ -567,6 +570,7 @@ function leeftijd2010() {
 
   $('#chart-title').html('<h4>Stemgedrag naar leeftijd <div class="btn-group" role="group"><button onclick="leeftijd2006()" type="button" class="btn btn-sm btn-secondary">2006</button><button onclick="leeftijd2010()" type="button" class="btn btn-sm btn-secondary active">2010</button><button onclick="leeftijd2012()" type="button" class="btn btn-sm btn-secondary">2012</button></div></h4>');
 
+  $('#chart-definitions').html('')
 }
 
 function burgerlijkeStaat2010() {
@@ -574,7 +578,7 @@ function burgerlijkeStaat2010() {
   var chart = nv.models.multiBarChart()
     chart.stacked(true)
     chart.reduceXTicks(false)
-    chart.yAxis.axisLabel('Percentage van stemmen')
+    chart.yAxis.axisLabel('Percentage stemmen van stemgerechtigden')
     chart.yAxis.axisLabelDistance(-10);
     chart.yDomain([0,100]);
     chart.yAxis.tickValues([10,20,30,40,50,60,70,80,90]);
@@ -707,6 +711,7 @@ function burgerlijkeStaat2010() {
 
   $('#chart-title').html('<h4>Stemgedrag naar burgerlijke staat <div class="btn-group" role="group"><button onclick="burgerlijkeStaat2006()" type="button" class="btn btn-sm btn-secondary">2006</button><button onclick="burgerlijkeStaat2010()" type="button" class="btn btn-sm btn-secondary active">2010</button><button onclick="burgerlijkeStaat2012()" type="button" class="btn btn-sm btn-secondary">2012</button></div></h4>');
 
+  $('#chart-definitions').html('<dl class="row"><dt class="col-sm-3">Ongehuwd</dt><dd class="col-sm-9">Burgerlijke staat die aangeeft dat een persoon nog nooit een huwelijk heeft gesloten of een geregistreerd partnerschap is aangegaan</dd><dt class="col-sm-3">Gehuwd/partnerschap</dt><dd class="col-sm-9">Burgerlijke staat die ontstaat na sluiting van een huwelijk. Inclusief personen die zijn gescheiden van tafel en bed, want zij blijven formeel gehuwd</dd><dt class="col-sm-3">Gescheiden</dt><dd class="col-sm-9">Burgerlijke staat die ontstaat na ontbinding van een wettig huwelijk door echtscheiding. Exclusief personen die zijn gescheiden van tafel en bed, want zij blijven formeel gehuwd</dd><dt class="col-sm-3">Verweduwd</dt><dd class="col-sm-9">Burgerlijke staat die ontstaat na ontbinding van een wettig huwelijk door overlijden van de partner</dd></dl>');
 }
 
 function stedelijkheid2010() {
@@ -714,7 +719,7 @@ function stedelijkheid2010() {
   var chart = nv.models.multiBarChart()
     chart.stacked(true)
     chart.reduceXTicks(false)
-    chart.yAxis.axisLabel('Percentage van stemmen')
+    chart.yAxis.axisLabel('Percentage stemmen van stemgerechtigden')
     chart.yAxis.axisLabelDistance(-10);
     chart.yDomain([0,100]);
     chart.yAxis.tickValues([10,20,30,40,50,60,70,80,90]);
@@ -857,6 +862,7 @@ function stedelijkheid2010() {
 
   $('#chart-title').html('<h4>Stemgedrag naar stedelijkheid <div class="btn-group" role="group"><button onclick="stedelijkheid2006()" type="button" class="btn btn-sm btn-secondary">2006</button><button onclick="stedelijkheid2010()" type="button" class="btn btn-sm btn-secondary active">2010</button><button onclick="stedelijkheid2012()" type="button" class="btn btn-sm btn-secondary">2012</button></div></h4>');
 
+  $('#chart-definitions').html('<p>Op grond van de omgevingsadressendichtheid is aan iedere buurt, wijk of gemeente een stedelijkheidsklasse toegekend. omgevingsadressendichtheid is aantal adressen binnen een cirkel met een straal van één kilometer rondom een adres, gedeeld door de oppervlakte van de cirkel. De omgevingsadressendichtheid wordt uitgedrukt in adressen per km<sup>2</sup>.</p><dl class="row"><dt class="col-sm-3">Zeer sterk stedelijk</dt><dd class="col-sm-9">Omgevingsadressendichtheid van 2500 of meer adressen per km<sup>2</sup></dd><dt class="col-sm-3">Sterk stedelijk</dt><dd class="col-sm-9">Omgevingsadressendichtheid van 1500 tot 2500 adressen per km<sup>2</sup></dd><dt class="col-sm-3">Matig stedelijk</dt><dd class="col-sm-9">Omgevingsadressendichtheid van 1000 tot 1500 adressen per km<sup>2</sup></dd><dt class="col-sm-3">Weinig stedelijk</dt><dd class="col-sm-9">Omgevingsadressendichtheid van 500 tot 1000 adressen per km<sup>2</sup></dd><dt class="col-sm-3">Niet stedelijk</dt><dd class="col-sm-9">Omgevingsadressendichtheid van minder dan 500 adressen per km<sup>2</sup></dd></dl>')
 }
 
 function kerkelijkeGezindte2010() {
@@ -864,7 +870,7 @@ function kerkelijkeGezindte2010() {
   var chart = nv.models.multiBarChart()
     chart.stacked(true)
     chart.reduceXTicks(false)
-    chart.yAxis.axisLabel('Percentage van stemmen')
+    chart.yAxis.axisLabel('Percentage stemmen van stemgerechtigden')
     chart.yAxis.axisLabelDistance(-10);
     chart.yDomain([0,100]);
     chart.yAxis.tickValues([10,20,30,40,50,60,70,80,90]);
@@ -1017,6 +1023,7 @@ function kerkelijkeGezindte2010() {
 
   $('#chart-title').html('<h4>Stemgedrag naar kerkelijke gezindte <div class="btn-group" role="group"><button onclick="kerkelijkeGezindte2006()" type="button" class="btn btn-sm btn-secondary">2006</button><button onclick="kerkelijkeGezindte2010()" type="button" class="btn btn-sm btn-secondary active">2010</button><button onclick="kerkelijkeGezindte2012()" type="button" class="btn btn-sm btn-secondary">2012</button></div></h4>');
 
+  $('#chart-definitions').html('<dl class="row"><dt class="col-sm-3">Geen</dt><dd class="col-sm-9">Personen van 18 jaar of ouder die zich niet rekenen tot een kerkelijke gezindte of levensbeschouwelijke groepering</dd><dt class="col-sm-3">Rooms-Katholiek</dt><dd class="col-sm-9">Personen van 18 jaar of ouder die zich rekenen tot de Rooms-katholieke kerk</dd><dt class="col-sm-3">Nederlands hervormd</dt><dd class="col-sm-9">Personen van 18 jaar of ouder die zich rekenen tot de Nederlands hervormde kerk</dd><dt class="col-sm-3">Gereformeerd</dt><dd class="col-sm-9">Ppersonen van 18 jaar of ouder die zich rekenen tot de gereformeerde kereken</dd><dt class="col-sm-3">Protestants</dt><dd class="col-sm-9">Personen van 18 jaar of ouder die zich rekenen tot de Protestantse Kerk in Nederland</dd><dt class="col-sm-3">Overige</dt><dd class="col-sm-9">Personen van 18 jaar of ouder die zich rekenen tot een hier niet onderscheiden kerkelijke gezindte of levensbeschouwelijke groepering, bijvoorbeeld islamieten, joden en hindoe</dd></dl>')
 }
 
 function kerkbezoek2010() {
@@ -1024,7 +1031,7 @@ function kerkbezoek2010() {
   var chart = nv.models.multiBarChart()
     chart.stacked(true)
     chart.reduceXTicks(false)
-    chart.yAxis.axisLabel('Percentage van stemmen')
+    chart.yAxis.axisLabel('Percentage stemmen van stemgerechtigden')
     chart.yAxis.axisLabelDistance(-10);
     chart.yDomain([0,100]);
     chart.yAxis.tickValues([10,20,30,40,50,60,70,80,90]);
@@ -1167,6 +1174,5 @@ function kerkbezoek2010() {
 
   $('#chart-title').html('<h4>Stemgedrag naar kerkbezoek <div class="btn-group" role="group"><button onclick="kerkbezoek2006()" type="button" class="btn btn-sm btn-secondary">2006</button><button onclick="kerkbezoek2010()" type="button" class="btn btn-sm btn-secondary active">2010</button><button onclick="kerkbezoek2012()" type="button" class="btn btn-sm btn-secondary">2012</button></div></h4>');
 
-  $('#chart-definitions').html('<dl class="row"><p class="col-xs-12">Het percentage personen van 18 jaar of ouder dat zichzelf tot een kerkelijk gezindte rekent en dat een keer per week of vaker een bijeenkomst bezoekt met een godsdienstig of levensbeschouwelijk doel.</p>');
-
+  $('#chart-definitions').html('<p>Dit betreft personen van 18 jaar of ouder <b>dat zichzelf tot een kerkelijk gezindte rekent</b> en hoe vaak zij een bijeenkomst bezoeken met een godsdienstig of levensbeschouwelijk doel.</p>')
 }
